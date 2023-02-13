@@ -1,0 +1,9 @@
+Compiling C:\Users\furka\OneDrive\Masaüstü\modbus-master\main on 22-Kas-22 at 00:01
+--- Info 300 "G:\Program Files (x86)\PICC\Drivers\modbus_phy_layer_rtu.c" Line 25(1,1): More info:   Timer 1 tick time is 128,00 us
+>>> Warning 240 "C:\Users\furka\OneDrive\Masaüstü\modbus-master\main.c" Line 91(72,81): Pointer types do not match
+>>> Warning 216 "C:\Users\furka\OneDrive\Masaüstü\modbus-master\main.c" Line 139(1,2): Interrupts disabled during call to prevent re-entrancy:  (@GETCH_BIU_1)
+>>> Warning 216 "C:\Users\furka\OneDrive\Masaüstü\modbus-master\main.c" Line 139(1,2): Interrupts disabled during call to prevent re-entrancy:  (modbus_calc_crc)
+>>> Warning 216 "C:\Users\furka\OneDrive\Masaüstü\modbus-master\main.c" Line 139(1,2): Interrupts disabled during call to prevent re-entrancy:  (modbus_enable_timeout)
+      Memory usage:   ROM=9%      RAM=8% - 9%
+      0 Errors,  4 Warnings.
+Build Successful.

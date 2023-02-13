@@ -1,0 +1,222 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019     @INTERRUPT_AREA
+01A.0   modbus_serial_new
+01A.1   modbus_timeout_enabled
+01B-05E modbus_rx
+05F     UPPER_TICKS_1
+060     rs232_errors
+061-064 modbus_serial_wait
+065     modbus_serial_state
+066-067 modbus_serial_crc
+068     lcd_line
+069-06E read_reg
+06F     d
+070-071 @sprintf_string
+072     MAIN.c
+073     MAIN.i
+074-075 read_all_holding.start
+074     lcd_init.i
+074-075 write_reg.address
+074     MAIN.@SCRATCH1
+074     @PSTRINGC_938.@SCRATCH1
+075     lcd_init.@SCRATCH1
+075     MAIN.@SCRATCH2
+075     @PSTRINGC_938.@SCRATCH2
+076-077 @PRINTF_LU_938.P1
+076     @PSTRINGCN_938.P2
+076-077 read_all_holding.quantity
+076-077 write_reg.data
+077     @PSTRINGCN_938.@SCRATCH1
+078     read_all_holding.count
+078     write_reg.count
+078     @PRINTF_LU_938.@SCRATCH1
+078     @PSTRINGCN_938.@SCRATCH2
+079     write_reg.i
+079     read_all_holding.i
+079     @PRINTF_LU_938.@SCRATCH2
+07A-07B read_all_holding.val
+07A-07B write_reg.val
+07A     @PRINTF_LU_938.@SCRATCH3
+07B     @PRINTF_LU_938.@SCRATCH4
+07C     modbus_read_holding_registers.address
+07C     modbus_write_single_register.address
+07C     read_all_holding.@SCRATCH1
+07C     write_reg.@SCRATCH1
+07C     @PRINTF_LU_938.@SCRATCH5
+07D-07E modbus_write_single_register.reg_address
+07D-07E modbus_read_holding_registers.start_address
+07D     read_all_holding.@SCRATCH2
+07D     write_reg.@SCRATCH2
+07D     @PRINTF_LU_938.@SCRATCH6
+07E     @PRINTF_LU_938.@SCRATCH7
+07F-080 modbus_read_holding_registers.quantity
+07F-080 modbus_write_single_register.reg_value
+07F     lcd_putc.c
+080     lcd_gotoxy.x
+080     @delay_ms1.P1
+081     modbus_serial_send_start.to
+081     lcd_gotoxy.y
+081     modbus_serial_send_stop.crc_low
+081     modbus_check_timeout.@SCRATCH1
+081     modbus_read_holding_registers.@SCRATCH1
+081     modbus_write_single_register.@SCRATCH1
+082     modbus_serial_send_stop.crc_high
+082     modbus_serial_send_start.func
+082     lcd_gotoxy.address
+082     modbus_check_timeout.@SCRATCH2
+083     modbus_serial_putc.c
+083     lcd_gotoxy.@SCRATCH1
+084     @PUTCHAR_BIU_1.P1
+084     lcd_send_byte.address
+085     lcd_send_byte.n
+085     @PUTCHAR_BIU_1.@SCRATCH1
+086     lcd_read_byte.low
+086     lcd_send_byte.@SCRATCH1
+087     lcd_read_byte.high
+087     lcd_send_nibble.nibble
+088     lcd_read_nibble.retval
+088.0   lcd_read_nibble.retval_0
+088.1   lcd_read_nibble.retval_1
+088.2   lcd_read_nibble.retval_2
+088.3   lcd_read_nibble.retval_3
+088     lcd_read_byte.@SCRATCH1
+089     incomming_modbus_serial.c
+08A     modbus_calc_crc.data
+08A     modbus_enable_timeout.enable
+08A     @GETCH_BIU_1.@SCRATCH1
+08A     incomming_modbus_serial.@SCRATCH1
+08B     modbus_calc_crc.uIndex
+08B-08C @SET_TICKS_1.P1
+08B     @GETCH_BIU_1.@SCRATCH2
+08B     incomming_modbus_serial.@SCRATCH2
+F83     PSP_DATA
+FAC     TXSTA
+FAC.1   TRMT
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000BA  modbus_auchCRCHi.call
+0000CA  modbus_auchCRCHi.data
+0001CA  modbus_auchCRCLo.call
+0001DA  modbus_auchCRCLo.data
+0002DA  LCD_INIT_STRING.call
+0002EA  LCD_INIT_STRING.data
+0002EE  @TIMERISR_1
+0002F6  @GETCH_BIU_1
+000326  @SET_TICKS_1
+000366  modbus_enable_timeout
+000374  modbus_calc_crc
+000392  incomming_modbus_serial
+0003FE  @const965.call
+00040E  @const972.call
+000418  RCV_ON
+000436  modbus_init
+000442  @delay_ms1
+000468  lcd_send_nibble
+0004A8  lcd_read_nibble
+0004DC  lcd_read_byte
+000500  lcd_send_byte
+000542  lcd_init
+000594  lcd_gotoxy
+0005D4  lcd_putc
+00061C  @PSTRINGC_938
+00063E  @PUTCHAR_BIU_1
+000666  modbus_serial_putc
+000688  modbus_serial_send_start
+0006A8  modbus_serial_send_stop
+0006D2  @GET_TICKS_1
+00071E  modbus_timeout_now
+000754  modbus_check_timeout
+000772  modbus_kbhit
+000794  modbus_write_single_register
+000810  write_reg
+000886  modbus_read_holding_registers
+000902  read_all_holding
+000978  @PRINTF_LU_938
+000A34  @PSTRINGCN_938
+000A54  MAIN
+000A54  @cinit1
+000AAC  @cinit2
+
+Project Directory:
+    C:\Users\furka\OneDrive\Masaüstü\modbus-master\
+
+Project Files:
+    main.c                                                  [22-Kas-22 00:01  CRC=CA15D9C6]
+    main.h                                                  [21-Kas-22 18:29  CRC=00000000]
+    G:\Program Files (x86)\PICC\Devices\18F4520.h           [21-Oca-21 11:37  CRC=C86B20B6]
+    G:\Program Files (x86)\PICC\Drivers\modbus.c            [09-Oca-13 14:55  CRC=3E341B64]
+    G:\Program Files (x86)\PICC\Drivers\modbus.h            [23-Eyl-20 09:08  CRC=85FC1A69]
+    G:\Program Files (x86)\PICC\Drivers\modbus_phy_layer.h  [23-Eyl-20 09:08  CRC=DC1A21A2]
+    G:\Program Files (x86)\PICC\Drivers\modbus_app_layer.h  [16-May-13 12:41  CRC=CCCEAEAD]
+    G:\Program Files (x86)\PICC\Drivers\modbus_phy_layer_rtu.c [20-Kas-22 16:40  CRC=5696658F]
+    G:\Program Files (x86)\PICC\Drivers\modbus_app_layer.c  [16-May-13 11:53  CRC=C73EB0AA]
+    flex_lcd420.c                                           [21-Kas-22 19:00  CRC=F76834B6]
+
+Source signature=0C3F803D
+Program memory checksum=0000
+Hex file CRC=E3DE
+
+Units:
+    C:\Users\furka\OneDrive\Masaüstü\modbus-master\main (main)
+
+Compiler Settings:
+    Processor:      PIC18F4520
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

@@ -1,0 +1,81 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F4520
+CCSVerions=5.101
+Compiler=PCH
+CCSVersion=5.101
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[C:\Users\furka\OneDrive\Masaüstü\modbus-master\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=3
+D1=21-11-2022
+D1_L=19
+D1_L1=[66550]Project Closed.
+D1_L2=[66550]Project Opened.
+D1_L3=[66562]Started Editing.
+D1_L4=[69252]Stopped Editing.
+D1_L5=[73475]Started Editing.
+D1_L6=[74256]Stopped Editing.
+D1_L7=[74535]Started Editing.
+D1_L8=[75382]Stopped Editing.
+D1_L9=[75544]Started Editing.
+D1_L10=[75886]Stopped Editing.
+D1_L11=[76047]Started Editing.
+D1_L12=[78496]Stopped Editing.
+D1_L13=[78825]Started Editing.
+D1_L14=[79203]Stopped Editing.
+D1_L15=[79738]Started Editing.
+D1_L16=[80198]Stopped Editing.
+D1_L17=[80350]Started Editing.
+D1_L18=[80746]Stopped Editing.
+D1_L19=[81813]Started Editing.
+D2=22-11-2022
+D2_L=2
+D2_L1=[228]Stopped Editing.
+TotalEdit=180
+TotalDebug=0
+D2_E=180
+D2_D=0
+D2_L2=[228]Project Closed.
+D3=13-02-2023
+D3_L=3
+D3_L1=[41265]Project Opened.
+D3_L2=[41371]Project Closed.
+D3_L3=[41387]Project Opened.
+
+[fileformats]
+forcecoff=0
+
+[Opened Files]
+1=main.c
+t1=21
+2=G:\Program Files (x86)\PICC\Devices\18F4520.h
+t2=1
+3=modbus.c
+t3=1
+Count=8
+4=modbus.h
+t4=1
+5=G:\Program Files (x86)\PICC\Drivers\modbus_phy_layer.h
+t5=1
+6=G:\Program Files (x86)\PICC\Drivers\modbus_app_layer.h
+t6=1
+7=G:\Program Files (x86)\PICC\Drivers\modbus_phy_layer_rtu.c
+t7=1
+8=G:\Program Files (x86)\PICC\Drivers\modbus_app_layer.c
+t8=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=79
+[Units]
+Count=1
+1=main (main)
